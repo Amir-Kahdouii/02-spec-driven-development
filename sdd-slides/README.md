@@ -1,32 +1,21 @@
-# React + TypeScript + Vite
+# sdd-slides
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Interactive presentation deck for **Spec-Driven Development**.
 
-Currently, two official plugins are available:
+Refer to the main [Root README](../README.md) for full project setup, presentation details, and GitHub Pages deployment instructions.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Quick Commands
 
-## React Compiler
+```bash
+# Install dependencies
+pnpm install
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# Start local dev server
+pnpm dev
 
-## Expanding the Oxlint configuration
+# Build for production
+pnpm build
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+# Preview build locally
+pnpm preview
 ```
-
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.

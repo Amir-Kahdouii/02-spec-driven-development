@@ -1,0 +1,8 @@
+# Build-script approvals for Parcel's native deps. pnpm 11 reads these from
+# here (no longer from package.json) and refuses to install until each is an
+# explicit true/false. All four just link prebuilt binaries.
+allowBuilds:
+  '@parcel/watcher': true
+  '@swc/core': true
+  lmdb: true
+  msgpackr-extract: true
